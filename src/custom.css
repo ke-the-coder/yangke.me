@@ -1,5 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
+/*** Bootstrap 3 metrics ***
+ * This layout was built against Bootstrap 3's base typography and grid. BS5
+ * enlarges headings (h1 36->40px, h4 18->24px), loosens line-height and
+ * paragraph margins, and narrows .container by 30px -- which together made
+ * the page ~450px taller and wrapped the WORKS entries onto two lines.
+ * Restoring the old metrics here keeps the design unchanged. This block sits
+ * before the site's own rules so those still override it, exactly as they
+ * overrode Bootstrap 3.
+ */
+body { line-height: 1.42857143; }
+
+/* BS3 headings used line-height 1.1; BS5 uses 1.2, which added ~2px per
+   heading and drifted the page ~43px taller over its 20 headings. */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { line-height: 1.1; }
+
+h1, .h1 { font-size: 36px; }
+h2, .h2 { font-size: 30px; }
+h3, .h3 { font-size: 24px; }
+h4, .h4 { font-size: 18px; }
+h5, .h5 { font-size: 14px; }
+h6, .h6 { font-size: 12px; }
+
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+h4, h5, h6 { margin-top: 10px; margin-bottom: 10px; }
+
+p { margin: 0 0 10px; }
+
+/* BS3 gutters were 15px per side (30px total); BS5 defaults to 24px. */
+.row { --bs-gutter-x: 30px; }
+
+/* BS3 containers had 15px of padding; BS5 derives it from --bs-gutter-x (12px). */
+.container { --bs-gutter-x: 30px; }
+
+/* BS3 container widths. BS5 adds a 540px tier at >=576px that BS3 never had,
+   and an xxl tier at >=1400px; both are neutralised so the breakpoints match. */
+@media (min-width: 576px)  { .container { max-width: none;   } }
+@media (min-width: 768px)  { .container { max-width: 750px;  } }
+@media (min-width: 992px)  { .container { max-width: 970px;  } }
+@media (min-width: 1200px) { .container { max-width: 1170px; } }
+/*** END Bootstrap 3 metrics ***/
+
 body {
     min-height: 2000px;
     padding-top: 160px;
@@ -39,18 +81,26 @@ h1 {
     margin-left: 0 !important;
 }
 
-@media (max-width: 768px) {
-    .navbar-default .navbar-collapse{background-color: #f8f8f8;}
+@media (max-width: 767.98px) {
+    .navbar .navbar-collapse{background-color: #f8f8f8;}
 }
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover { color:#555;background-color:inherit;}
-.navbar-default .navbar-nav>li>a::before { content: "\007C\00a0\00a0"; font-weight:300; }
-.navbar-default .navbar-nav>.active>a::before { content: "\2044\00a0\00a0"; font-weight:300;}
+/* BS3 supplied these via .navbar-default: BS5 zeroes the horizontal
+   padding and takes link colour from a CSS variable. */
+.navbar .navbar-nav .nav-link { color:#777; padding:15px; line-height:20px; }
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.active:hover { color:#555;background-color:inherit;}
+.navbar .navbar-nav .nav-link::before { content: "\007C\00a0\00a0"; font-weight:300; }
+.navbar .navbar-nav .nav-link.active::before { content: "\2044\00a0\00a0"; font-weight:300;}
 
-header {
+header.navbar {
     width: 100%;
     padding: 50px 0 60px 0;
-    background-color: #e3e3e3;
+    /* BS3's .navbar-default supplied #f8f8f8, which outranked this
+       element selector -- that is what the page actually rendered.
+       BS5's .navbar is transparent, so set it explicitly. */
+    background-color: #f8f8f8;
+    /* BS3's .navbar-fixed-top carried a 1px bottom border. */
+    border-bottom: 1px solid #e7e7e7;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -217,7 +267,7 @@ section#contact {
 /*** js related ***/
 
 /* mini top */
-header.mini-top { height: 70px; padding: 10px 0;}
+header.navbar.mini-top { height: 70px; padding: 10px 0;}
 
 /* content loading */
 .vpHidden { opacity:0;}

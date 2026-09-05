@@ -7,34 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ke Yang</title>
 
-	<link href="/assets/favicon-BzuGdWGS.ico" rel="shortcut icon">
+	<link href="./favicon.ico" rel="shortcut icon">
 
 
 
-  <script type="module" crossorigin src="/assets/index-Bpxx13Pa.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-8yMKCad-.css">
+  <script defer src="./assets/index-ClafiTlR.js"></script>
+  <link rel="stylesheet" href="./assets/style-DrN3J7Ts.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-scrollspy">
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
 
 	<!-- Fixed navbar -->
-	<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<header class="navbar navbar-expand-md fixed-top" role="navigation">
 		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href=""><i class="fa fa-home"></i></a>
-			</div>
-			<div class="navbar-collapse collapse navbar-scrollspy">
-				<ul class="nav navbar-nav navbar-right" role="tablist">
-					<li class="active"><a href="#home">home</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#works">works</a></li>
-					<li><a href="#contact">contact</a></li>
+			<a class="navbar-brand" href=""><i class="fa-solid fa-home"></i></a>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
+				aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbar-scrollspy" id="main-nav">
+				<ul class="navbar-nav ms-auto" role="tablist">
+					<li class="nav-item"><a class="nav-link active" href="#home">home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+					<li class="nav-item"><a class="nav-link" href="#works">works</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -44,12 +40,12 @@
 		<div class="container">
 			<!-- Main component for a primary marketing message or call to action -->
 
-			<h1 id="title" class="animated fadeInDown">KE YANG</h1>
+			<h1 id="title" class="animate__animated animate__fadeInDown">KE YANG</h1>
 			<p>&nbsp;</p>
-			<h2 id="subtitle" class="animated fadeIn">Software Design and Implementation</h2>
+			<h2 id="subtitle" class="animate__animated animate__fadeIn">Software Design and Implementation</h2>
 
-			<a class="btn btn-lg btn-msg animated fadeInUp" href="#contact" role="button">Drop me a line <i
-					class="fa fa-chevron-down goDown"></i></a>
+			<a class="btn btn-lg btn-msg animate__animated animate__fadeInUp" href="#contact" role="button">Drop me a line <i
+					class="fa-solid fa-chevron-down goDown"></i></a>
 
 		</div> <!--/container -->
 	</section> <!-- /home -->
@@ -64,28 +60,28 @@
 
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<img src="/assets/me01-C46pVoCd.jpg" alt="me" id="photo-me" class="img-circle">
+			<img src="./assets/me01-C46pVoCd.jpg" alt="me" id="photo-me" class="rounded-circle">
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<div class="row" id="about-icons">
-				<div class="col-sm-3 col-md-3 col-xs-6">
-					<i class="fa fa-code"></i>
+				<div class="col-sm-3 col-md-3 col-6">
+					<i class="fa-solid fa-code"></i>
 					<h4>EMACS USER</h4>
 				</div>
-				<div class="col-sm-3 col-md-3 col-xs-6">
-					<i class="fa fa-linux"></i>
+				<div class="col-sm-3 col-md-3 col-6">
+					<i class="fa-brands fa-linux"></i>
 					<h4>LINUX USER</h4>
 				</div>
-				<div class="col-sm-3 col-md-3 col-xs-6">
-					<!-- <i class="fa fa-code-fork"></i> -->
+				<div class="col-sm-3 col-md-3 col-6">
+					<!-- <i class="fa-solid fa-code-branch"></i> -->
 					<a href="https://github.com/yangke-nz/" target="_blank">
-						<i class="fa fa-code-fork" aria-hidden="true"></i>
+						<i class="fa-solid fa-code-branch" aria-hidden="true"></i>
 					</a>
 					<h4>PROGRAMMER</h4>
 				</div>
-				<div class="col-sm-3 col-md-3 col-xs-6">
-					<i class="fa fa-coffee"></i>
+				<div class="col-sm-3 col-md-3 col-6">
+					<i class="fa-solid fa-coffee"></i>
 					<h4>COFFEE LOVER</h4>
 				</div>
 			</div>
@@ -96,11 +92,11 @@
 			<p>&nbsp;</p>
 			<!-- data1 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EDUCATION</span><span class="seperator">|</span><span class="date">Feb. 2007
 							- Dec. 2009</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Bachelor of Computer Science, Monash University</h4>
 					<p>Melbourne, Australia — Feb. 2007 - Dec. 2009
 					<p>
@@ -109,11 +105,11 @@
 			<!-- /data1 -->
 			<!-- data2 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">AWARD</span><span class="seperator">|</span><span class="date">Feb.
 							2008</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Head of Clayton School of IT Achievement Award</h4>
 					<p>Monash University Faculty of Information Technology, Australia
 					<p>
@@ -122,11 +118,11 @@
 			<!-- /data2 -->
 			<!-- data3 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">SCHOLARSHIP</span><span class="seperator">|</span><span class="date">2008 -
 							2009</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Monash University International Scholarship for Excellence</h4>
 					<p>Monash University, Australia
 					<p>
@@ -135,11 +131,11 @@
 			<!-- /data3 -->
 			<!-- data -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">AWARD</span><span class="seperator">|</span><span class="date">2019</span>
 					</p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Outstanding Performance Award 2019 Q1</h4>
 					<p>Universal Communications Group, New Zealand
 					<p>
@@ -148,11 +144,11 @@
 			<!-- /data -->
 			<!-- data -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">AWARD</span><span class="seperator">|</span><span class="date">2019</span>
 					</p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Outstanding Performance Award 2019 Q4</h4>
 					<p>Universal Communications Group, New Zealand
 					<p>
@@ -161,11 +157,11 @@
 			<!-- /data -->
 			<!-- data -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">AWARD</span><span class="seperator">|</span><span class="date">2020</span>
 					</p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Outstanding Performance Award 2020 Q1</h4>
 					<p>Universal Communications Group, New Zealand
 					<p>
@@ -183,11 +179,11 @@
 
 			<!-- data10 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span class="date">2022 -
 							Current</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Software Development Manager, Universal Communications Group
 					</h4>
 					<p>Auckland, New Zealand &amp; Brisbane, Australia
@@ -197,11 +193,11 @@
 			<!-- /data10 -->
 			<!-- data9 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span class="date">2019 -
 							2022</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Software Solution Architect, Universal Communications Group
 					</h4>
 					<p>Auckland, New Zealand &amp; Brisbane, Australia
@@ -211,11 +207,11 @@
 			<!-- /data9 -->
 			<!-- data8 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span class="date">2018 -
 							2019</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Software Development Team Lead, Universal Communications Group
 					</h4>
 					<p>Auckland, New Zealand &amp; Brisbane, Australia
@@ -225,11 +221,11 @@
 			<!-- /data8 -->
 			<!-- data7 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span class="date">2014 -
 							2018</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Software Developer, Universal Communications Group
 					</h4>
 					<p>Auckland, New Zealand &amp; Brisbane, Australia
@@ -239,11 +235,11 @@
 			<!-- /data7 -->
 			<!-- data6 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span class="date">2010 -
 							2014</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Co-Founder, 3A web solution Ltd
 					</h4>
 					<p>Auckland, New Zealand
@@ -253,11 +249,11 @@
 			<!-- /data6 -->
 			<!-- data4 -->
 			<div class="row top-line">
-				<div class="meta col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				<div class="meta col-md-4 offset-md-0 col-10 offset-1">
 					<p><span class="title">EXPERIENCE</span><span class="seperator">|</span><span
 							class="date">2008</span></p>
 				</div>
-				<div class="info col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+				<div class="info col-md-7 offset-md-1 col-10 offset-1">
 					<h4>Linux Document Translator</h4>
 					<p>Melbourne, Australia
 					<p>
@@ -276,7 +272,7 @@
 			<p>&nbsp;</p>
 			<p>Interested in working together or just want to say hello? &nbsp;Drop me a line.
 				<a href="https://www.linkedin.com/in/yangke/" target="_blank">
-					<i class="fa fa-send-o goRight"></i>
+					<i class="fa-regular fa-paper-plane goRight"></i>
 				</a>
 			</p>
 			<p>&nbsp;</p>
@@ -289,8 +285,8 @@
 	</section> <!-- /map -->
 
 	<footer>
-		&copy; 2014 KE YANG &nbsp;&nbsp;<i class="fa fa-spinner fa-spin"></i>&nbsp;&nbsp; HANDCRAFTED WITH <i
-			class="fa fa-heart-o"></i> IN NEW ZEALAND
+		&copy; 2014 KE YANG &nbsp;&nbsp;<i class="fa-solid fa-spinner fa-spin"></i>&nbsp;&nbsp; HANDCRAFTED WITH <i
+			class="fa-regular fa-heart"></i> IN NEW ZEALAND
 		<sub>rebuilt with vite</sub>
 	</footer>
 
