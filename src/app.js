@@ -1,9 +1,9 @@
+import $ from './jquery-global.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import 'animate.css/animate.min.css'
+import 'animate.css/animate.min.css';
 import './custom.css';
-import './favicon.ico';
 
 (function ($) {
 
@@ -22,4 +22,4 @@ import './favicon.ico';
     
   
     
-}(jQuery))
+}($))

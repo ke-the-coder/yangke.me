@@ -1,14 +1,9 @@
 # yangke.me
-## Personal CV website rebuild using npm and webpack
+## Personal CV website rebuild using npm and vite
 ```
 npm install
 
-npm run serve
+npm run dev
 
 npm run build
-```
-
-```
-docker build -t html-server-yangkedotme:latest .
-docker run -d -p 80:80 html-server-yangkedotme:latest
 ```
