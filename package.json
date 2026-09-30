@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangke-nz/yangke.me.git"
+    "url": "git+https://github.com/ke-the-coder/yangke.me.git"
   },
   "author": "Ke Yang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangke-nz/yangke.me/issues"
+    "url": "https://github.com/ke-the-coder/yangke.me/issues"
   },
-  "homepage": "https://github.com/yangke-nz/yangke.me#readme",
+  "homepage": "https://github.com/ke-the-coder/yangke.me#readme",
   "devDependencies": {
     "vite": "^8.2.2"
   },
